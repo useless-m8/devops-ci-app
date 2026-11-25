@@ -66,9 +66,9 @@ jobs:
     needs: test
     runs-on: ubuntu-latest
 
-    # ИНЦИДЕНТ 1: намеренно нет packages: write
     permissions:
       contents: read
+      packages: write
 
     steps:
       - name: Checkout
